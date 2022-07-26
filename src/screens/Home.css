@@ -1,0 +1,64 @@
+.App {
+    /* background-color: red; */
+    background-image: url("../images/bg-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-color:hsl(257, 40%, 49%);
+  }
+
+  .main{
+    color: white; 
+    font-size: bolder;
+    margin: 0 3em;
+    display: flex;
+  }
+  .footer{
+    text-align: end;
+    padding: 0.6em;
+    color: white;
+    padding-right: 3em;
+
+  }
+button{
+   border-radius: 50px;
+   background-color: hsl(300, 69%, 71%);
+    border: none; 
+    padding: 0.5em 2em;
+    color: white; 
+}
+
+
+  @media only screen and (max-width: 600px) {
+    .App{
+      background-image: url("../images/bg-mobile.svg");
+      
+    }
+    .heading{
+  padding: 1em;
+}
+    img{
+      width: 100%;
+    }
+    .main{
+      display: block;
+      color: white;
+      margin: 2em;
+    }
+    .footer{
+      text-align: center;
+    }
+    button{
+      background-color: white;
+      color:black;
+      text-align: center;
+      padding: 1em 3em;
+      border: none;
+    }
+  }
+@media only screen and (min-width: 1440px) {
+  .main{
+      display: flex;
+  }
+}
